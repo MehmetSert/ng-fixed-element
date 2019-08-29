@@ -1,1 +1,97 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=latin-ext');
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  font-family: 'Noto Sans', sans-serif;
+  p {
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+header {
+  background-color: #5757b7;
+  padding: 20px 30px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  .logo {
+
+  }
+  .main-menu {
+    ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        a {
+          padding: 3px 10px;
+          color: #fff;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+.content {
+  padding: 50px 150px;
+  .section-header {
+    background-color: #e6ecec;
+    padding: 14px 20px;
+    display: block;
+    margin-bottom: 25px;
+    h2 {
+      margin: 0;
+      color: #5767b7;
+    }
+  }
+}
+
+.flex-content {
+  display: flex;
+  .left {
+    width: 80%;
+    margin-right: 15px;
+  }
+  .right {
+    width: 20%;
+    margin-left: 15px;
+    .sidebar {
+      background-color: #e6ecec;
+      padding: 15px;
+      .sidebar-title {
+        display: block;
+        margin-bottom: 15px;
+        font-size: 18px;
+      }
+      ul {
+        li {
+          font-size: 13px;
+          padding: 3px 0;
+          cursor: pointer;
+          transition: .3s;
+          &:hover {
+            color: #5757b7;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ms-fixed-element-container {
+  display: block;
+}
+.ms-fixed {
+  position: fixed;
+}

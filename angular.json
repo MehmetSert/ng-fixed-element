@@ -124,6 +124,41 @@
           }
         }
       }
+    },
+    "ng-fixed-element": {
+      "projectType": "library",
+      "root": "projects/ng-fixed-element",
+      "sourceRoot": "projects/ng-fixed-element/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-fixed-element/tsconfig.lib.json",
+            "project": "projects/ng-fixed-element/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-fixed-element/src/test.ts",
+            "tsConfig": "projects/ng-fixed-element/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-fixed-element/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-fixed-element/tsconfig.lib.json",
+              "projects/ng-fixed-element/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "ng-fixed-element-demo"
 }

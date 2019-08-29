@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng-fixed-element": [
+        "dist/ng-fixed-element"
+      ],
+      "ng-fixed-element/*": [
+        "dist/ng-fixed-element/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
