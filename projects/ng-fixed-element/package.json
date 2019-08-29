@@ -1,6 +1,25 @@
 {
   "name": "ng-fixed-element",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "This Angular plug-in allows you to keep items on the page at the top. Sticky header, can fixed sidebar.",
+  "author": "Mehmet Sert",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MehmetSert/ng-fixed-element.git"
+  },
+  "homepage": "https://github.com/MehmetSert/ng-fixed-element",
+  "keywords": [
+    "angular",
+    "angular 2",
+    "angular 8",
+    "angular sticky header",
+    "angular fixed header",
+    "angular sticky element",
+    "angular fixed element",
+    "angular sticky content",
+    "angular fixed content"
+  ],
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^8.2.3",
     "@angular/core": "^8.2.3"

@@ -1,26 +1,26 @@
 <p align="center">
   <h1 align="center">Angular Fixed Element</h1>
 </p>
-<p align="center">This Angular plug-in allows you to keep items on the page at the top.</p>
+<p align="center">Bu Angular eklentisi, sayfadaki öğeleri üstte tutmanızı sağlar.</p>
 
 ------------
 
 ## Demo
-[Click here](https://stackblitz.com/edit/ng-fixed-element "buraya tıklayın") for a live demo.
+Canlı demo için [buraya tıklayın](https://stackblitz.com/edit/ng-fixed-element "buraya tıklayın").
 
-## Installation
-You can use npm to install the package.
+## Kurulum
+Paketi yüklemek için npm'i kullanabilirsiniz.
 
 ###### NPM
 ```
 npm install --save ng-fixed-element
 ```
 
-## Use
-Follow the steps below to add the ng-fixed-element package to your project.
+## Kullanım
+Projenize ng-fixed-element paketini eklemek için aşağıdaki adımları izleyin.
 
-**1.  Import NgFixedElementModule**
-Import NgFixedElementModule in the module you want to use in your application.
+**1.  NgFixedElementModule'yi import edin.**
+NgFixedElementModule'yi uygulamanızda kullanmak istediğiniz modülde içe aktarın.
 ```javascript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -45,8 +45,8 @@ export class AppModule { }
 
 ```
 
-**2.  Use within HTML**
-Give the ngFixedElement directive to the object you want to fix. Example;
+**2.  HTML içinde kullanın**
+Sabitlemek istediğiniz nesneye ngFixedElement direktifini verin. Örnek;
 ```html
 <div class="sidebar" ngFixedElement [marginTop]="10">
   <ul>
@@ -59,15 +59,15 @@ Give the ngFixedElement directive to the object you want to fix. Example;
   </ul>
 </div>
 ```
-If you do not want to give a space above, you can remove the [marginTop] property, which will be 0 by default.
+Yukarıdan boşluk vermek istemiyorsanız [marginTop] özelliğini kaldırabilirsiniz, varsayılan olarak 0 olacaktır.
 
 
-## Features
-| Name | Type | Required | Default | Description |
+## Özellikler
+| İsim | Tip | Zorunlu | Varsayılan | Açıklama |
 | ------------ | ------------ | ------------ | ------------ | ------------ |
-| marginTop | Number  | No | 0 | Sets the spacing of the pinned object from above. |
+| marginTop | Number  | Hayır | 0 | Sabitlenen nesnenin yukarıdan boşluğunu ayarlar. |
 
-## Author
+## Paylaşan
 [Mehmet Sert](https://mehmetsert.com.tr "Mehmet Sert")
 - [Github/MehmetSert](https://github.com/MehmetSert "Github/MehmetSert")
 - [Linkedin/mehmet-sert](https://www.linkedin.com/in/mehmet-sert/ "Linkedin/mehmet-sert")
